@@ -1,0 +1,120 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #174ea6;
+  font-size: 36px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.summary span {
+  background: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #00000010;
+}
+
+.parking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.parking-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px #00000012;
+  border: 1px solid #e2e8f0;
+}
+
+.parking-card h2 {
+  font-size: 28px;
+  color: #174ea6;
+}
+
+.available {
+  color: #15803d;
+}
+
+.booked {
+  color: #dc2626;
+}
+
+.book-button,
+.booked-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.book-button {
+  background: #16a34a;
+  color: white;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background: #15803d;
+}
+
+.booked-button {
+  background: #cbd5e1;
+  color: #475569;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #dc2626;
+  text-align: center;
+}
+
+.message {
+  text-align: center;
+  font-weight: bold;
+  color: #15803d;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    padding: 20px 12px;
+  }
+}
